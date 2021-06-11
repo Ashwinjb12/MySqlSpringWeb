@@ -64,8 +64,8 @@ public class GreetingController {
 		System.out.println("Calling the /greeting get method.");
 		// add name and email to database spring_db
 		model.addAttribute("userDetails", detailsRepository.findAll());
-		
-		// return all the name and email values from spring_db
+		// displaying data from database  
+		// return all the name and email values from webtest
 		return "viewall";
 	}
 
